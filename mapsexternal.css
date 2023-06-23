@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    font-family: Arial, sans-serif;
+    display: none;
+}
+main{
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    
+    background: #111111;
+    padding: 15px 50px;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo1{
+    width: 130px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.lowgo{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+nav ul li a{
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    
+}
+.item a:after{
+    content: "";
+    position: absolute;
+    background-color: #FA5181;
+    height: 4px;
+    width: 0%;
+    left: 0;
+    bottom: -18px;
+    transition: 0.3s;
+    
+}
+
+.menu a:hover:after{
+    width: 100%;
+}
+
+
+.drop-container {
+    font-family: Arial, sans-serif;
+      float: right;
+      overflow: hidden;
+}
+    
+.drop-container .dropicon {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      margin: 0;
+      padding: 14px 16px;
+
+}
+    
+.drop-container:hover .dropicon {
+      background-color: #333333;
+      color: black;
+}
+    
+.dropdown-social {
+      display: none;
+      position: absolute;
+      background-color: #292929;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+}
+    
+.dropdown-social a {
+      float: none;
+      font-size: 14PX;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+}
+    
+.dropdown-social a:hover {
+      background-color: #444444;
+}
+    
+.drop-container:hover .dropdown-social {
+      display: block;
+}
+
+.play-now{
+    font-family: Arial, sans-serif;
+    position: relative;
+    text-decoration: none;
+    padding: 15px;
+}
+.buttonplay{
+    margin-right: 40px;
+    border: none;
+    background: #FA5181;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+.buttonplay:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.carousel-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+}
+
+.carousel-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
+}
+
+.carousel-slide.active {
+      opacity: 1;
+}
+
+.carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.controls {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+}
+
+.control-btn {
+      display: inline-block;
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+      background-color: #FFC5D6;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+.control-btn.active {
+    background-color: #FA5181;
+}
+
+
+/*MAINNNNNNNNNNNNNNNNNNNNN*/
+main {
+    background-image: url(mainimg/mapbg1.png);
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+main h1{
+    padding: 50px 100px;
+    color: #FA5181;
+    font-size: 100px
+}
+.main-text p{
+    text-align: center;
+    padding: 50px 160px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 12px
+}
+
+/*picture gallery*/
+.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+        
+    }
+
+.gallery-item {
+      width: 300px;
+      margin: 10px;
+    margin-left: 40px;
+      
+}
+
+.gallery-item img {
+      width: 100%;
+      height: auto;
+}
+
+.gallery-item .caption {
+      padding: 10px;
+      background-color: white;
+      text-align: center;
+}
+
+    .caption h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+        
+    }
+
+    .caption a {
+    margin-top: 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    }
+/*end of picture gallery*/
+
+
+.download{
+    padding: 20px;
+    text-align: center;
+    background-color: #292929;
+    font-family: Arial, sans-serif;
+}
+
+.download a{
+    color: #EFE6E6;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    text-align: center;
+    
+}
+.download a{
+    width: 240px;
+    height: 80px;
+    border-radius: 4px;
+    transition: .3s;
+    
+    
+}
+    
+.download a:hover {
+      padding: 6px;
+      background-color: #FFC5D6;
+      color: black;
+    }
+
+footer{
+    background-color: #111111;
+    padding-bottom: 40px;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+
+.social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.social-links img {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+     cursor: pointer;
+}
+.riotlogo{
+    background-color: #111111;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.riotlogo:hover{
+    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+footer p{
+    font-family: Arial, sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px;
+    
+}
+.privacynote{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.privacynote a{
+    color: #E8E5E5;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.privacynote a{
+    width: 240px;
+    height: 80px;
+    border-radius: 4px;
+    transition: .3s;  
+}   
+.privacynote a:hover {
+      padding: 6px;
+      background-color: #FFC5D6;
+      color: #292929;
+}
